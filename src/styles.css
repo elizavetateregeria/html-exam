@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 16px;
+    grid-row-gap: 40px;
+    margin: 0 auto;
+}
+
+.card-person {
+    width: 200px;
+    position: relative;
+    padding: 12px 12px 9px 12px;
+}
+
+.card-person:hover {
+    background-color: #EEEEEE;
+    transform: scale(1.2);
+    border-radius: 12px;
+}
+
+.card-person:hover .card-person__photo img {
+    border-radius: 60px;
+}
+
+.card-person:hover .card-person__details-extra {
+    display: block;
+}
+
+.card-person__photo {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.card-person__photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+}
+
+.card-person__rank {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 84px;
+    left: 158px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    color: #8B0000;
+    font-weight: bold;
+}
+
+.card-person__details-extra {
+    display: none;
+}
+
+.card-person__details-name {
+    color: #2F4F4F;
+    font-size: 20px;
+}
